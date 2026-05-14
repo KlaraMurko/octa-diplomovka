@@ -15,17 +15,29 @@
 # =========================
 # QUALITY FILTERING
 # =========================
-02_Quality_Filtering/data/
-02_Quality_Filtering/results/
+02_Quality_Filtering/data/*
+!02_Quality_Filtering/data/.gitkeep
+
+02_Quality_Filtering/data/data_split_quality/*
+!02_Quality_Filtering/data/data_split_quality/.gitkeep
+
+
+02_Quality_Filtering/results/*
+!02_Quality_Filtering/results/
+!02_Quality_Filtering/results/cnn_model/
+!02_Quality_Filtering/results/cnn_model/convnext_tiny_28/
+!02_Quality_Filtering/results/cnn_model/convnext_tiny_28/.gitkeep
 
 # =========================
 # MODEL TRAINING DATA
 # =========================
-03_Model_Training/data/data/
-03_Model_Training/data/master_excels/
+# ignore content
+03_Model_Training/data/data/*
+03_Model_Training/data/master_excels/*
 
-# split data (IMPORTANT - ignore whole folder)
-03_Model_Training/data/preparation/data_split_quality/
+# allow placeholders
+!03_Model_Training/data/data/.gitkeep
+!03_Model_Training/data/master_excels/.gitkeep
 
 # encoder results (trained models)
 03_Model_Training/encoders/results/
