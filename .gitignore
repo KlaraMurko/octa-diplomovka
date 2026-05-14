@@ -1,26 +1,17 @@
-# =========================
-# DATA PREPROCESSING
-# =========================
 01_Data_Preprocessing/data_all/
 
-# ignore content
 01_Data_Preprocessing/datasets/*
-
-# allow placeholder
 !01_Data_Preprocessing/datasets/.gitkeep
 
 01_Data_Preprocessing/octagon_damaged/
 01_Data_Preprocessing/master_dataset.csv
 
-# =========================
-# QUALITY FILTERING
-# =========================
+
 02_Quality_Filtering/data/*
 !02_Quality_Filtering/data/.gitkeep
 
 02_Quality_Filtering/data/data_split_quality/*
 !02_Quality_Filtering/data/data_split_quality/.gitkeep
-
 
 02_Quality_Filtering/results/*
 !02_Quality_Filtering/results/
@@ -28,50 +19,40 @@
 !02_Quality_Filtering/results/cnn_model/convnext_tiny_28/
 !02_Quality_Filtering/results/cnn_model/convnext_tiny_28/.gitkeep
 
-# =========================
-# MODEL TRAINING DATA
-# =========================
-# ignore content
+
 03_Model_Training/data/data/*
 03_Model_Training/data/master_excels/*
 
-# allow placeholders
 !03_Model_Training/data/data/.gitkeep
 !03_Model_Training/data/master_excels/.gitkeep
 
-# encoder results (trained models)
-03_Model_Training/encoders/results/
 
-# classifier outputs
-03_Model_Training/classifier/results/
+03_Model_Training/encoders/results/*
+!03_Model_Training/encoders/results/.gitkeep
 
-# =========================
-# MODELS (general)
-# =========================
+
+03_Model_Training/classifier/results/*
+!03_Model_Training/classifier/results/best_model/
+!03_Model_Training/classifier/results/best_model/.gitkeep
+
+
 *.pt
 *.pth
 *.h5
 *.ckpt
 
-# =========================
-# PYTHON CACHE
-# =========================
+
 __pycache__/
 *.pyc
 
-# =========================
-# NOTEBOOKS
-# =========================
+
 .ipynb_checkpoints/
 
-# =========================
-# SYSTEM
-# =========================
+
 .DS_Store
 
-# IDE
+
 .idea/
 .vscode/
 
-# Excel outputs / preprocessing results
 03_Model_Training/data/preparation/quality_predictions.xlsx
