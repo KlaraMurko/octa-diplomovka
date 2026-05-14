@@ -1,0 +1,53 @@
+# =========================
+# DATA PREPROCESSING
+# =========================
+01_Data_Preprocessing/data_all/
+01_Data_Preprocessing/datasets/
+01_Data_Preprocessing/octagon_damaged/
+01_Data_Preprocessing/master_dataset.csv
+
+# =========================
+# QUALITY FILTERING
+# =========================
+02_Quality_Filtering/data/
+02_Quality_Filtering/results/
+
+# =========================
+# MODEL TRAINING DATA
+# =========================
+03_Model_Training/data/data/
+03_Model_Training/data/master_excels/
+
+# encoder results (trained models)
+03_Model_Training/encoders/results/
+
+# classifier outputs
+03_Model_Training/classifier/results/
+
+# =========================
+# MODELS (general)
+# =========================
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# =========================
+# PYTHON CACHE
+# =========================
+__pycache__/
+*.pyc
+
+# =========================
+# NOTEBOOKS
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# SYSTEM
+# =========================
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
