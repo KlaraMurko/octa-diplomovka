@@ -2,7 +2,13 @@
 # DATA PREPROCESSING
 # =========================
 01_Data_Preprocessing/data_all/
-01_Data_Preprocessing/datasets/
+
+# ignore content
+01_Data_Preprocessing/datasets/*
+
+# allow placeholder
+!01_Data_Preprocessing/datasets/.gitkeep
+
 01_Data_Preprocessing/octagon_damaged/
 01_Data_Preprocessing/master_dataset.csv
 
@@ -17,6 +23,9 @@
 # =========================
 03_Model_Training/data/data/
 03_Model_Training/data/master_excels/
+
+# split data (IMPORTANT - ignore whole folder)
+03_Model_Training/data/preparation/data_split_quality/
 
 # encoder results (trained models)
 03_Model_Training/encoders/results/
@@ -51,3 +60,6 @@ __pycache__/
 # IDE
 .idea/
 .vscode/
+
+# Excel outputs / preprocessing results
+03_Model_Training/data/preparation/quality_predictions.xlsx
